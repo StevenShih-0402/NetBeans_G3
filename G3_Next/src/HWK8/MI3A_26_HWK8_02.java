@@ -78,7 +78,7 @@ public class MI3A_26_HWK8_02 extends javax.swing.JFrame implements ActionListene
         }
         
         setButtonName();
-        setGrid(gbc, 0,1,1,3,1,3);
+        setGrid(gbc, 0,1,1,1,1,3);
         cp.add(p2, gbc);
     }
     void setGrid(GridBagConstraints gbc, int gridx, int gridy, int gridwidth, int gridheight, int weightx, int weighty){

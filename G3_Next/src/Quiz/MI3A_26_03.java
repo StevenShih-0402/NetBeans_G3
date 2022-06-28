@@ -120,6 +120,7 @@ public class MI3A_26_03 extends javax.swing.JFrame {
     private void wordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wordActionPerformed
         // TODO add your handling code here:
         command.append(name.getText() + " : " + word.getText() + "\n");
+        command.setCaretPosition(command.getDocument().getLength());
     }//GEN-LAST:event_wordActionPerformed
 
     private void btnXActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnXActionPerformed
@@ -127,6 +128,7 @@ public class MI3A_26_03 extends javax.swing.JFrame {
         new Thread(()->{
             while(true){
                 command.append("X : Hi.\n");
+                command.setCaretPosition(command.getDocument().getLength());
                 try{
                     Thread.sleep(500);
                 }catch(Exception e){
@@ -141,6 +143,7 @@ public class MI3A_26_03 extends javax.swing.JFrame {
         new Thread(()->{
             while(true){
                 command.append("Y : Hello.\n");
+                command.setCaretPosition(command.getDocument().getLength());
                 try{
                     Thread.sleep(1000);
                 }catch(Exception e){

@@ -97,7 +97,7 @@ public class MI3A_26_HWK3_02{
         int totalPrimeNo = 0;
         try(FileWriter fw = new FileWriter(f)){
             for(int i = 0; i < primeListArr.length; i++){
-                var primeList = primeListArr[i];
+                ArrayList<Integer> primeList = primeListArr[i];
                 totalPrimeNo += primeList.size();
                 System.out.println("#Collected Primes by thread-" + i + ": " + primeList.size());
                 String primeStr = primeList.toString().replace("[", "").replace("]", "");
